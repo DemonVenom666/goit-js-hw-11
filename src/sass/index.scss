@@ -58,17 +58,23 @@ body {
   background: linear-gradient(to right, yellow, blue);
   background-size: 150%;
   box-shadow: 2px 1px 2px rgb(3, 46, 201);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .search-button:hover {
   scale: 1.02;
   background-position: 40%;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .load-more {
   font-size: 25px;
   padding: 20px;
   color: black;
   background-clip: padding-box;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
@@ -78,10 +84,13 @@ body {
   background-size: 150%;
   border: none;
   border-radius: 6px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     background-position: 40%;
     box-shadow: 2px 2px 5px #33067a;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &.is-hidden {
