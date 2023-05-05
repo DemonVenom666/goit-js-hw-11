@@ -41,7 +41,7 @@ body {
   font-size: 20px;
   margin-right: 20px;
   width: 300px;
-  border-radius: 10px;
+  border-radius: 20px;
   outline: none;
   box-shadow: 2px 1px 2px rgb(3, 46, 201);
 }
@@ -53,14 +53,16 @@ body {
   display: inline-flex;
   padding: 15px 30px 15px 30px;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   font-size: 20px;
   background: linear-gradient(to right, blue, yellow);
   box-shadow: 2px 1px 2px rgb(3, 46, 201);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .search-button:hover {
   scale: 1.02;
   background: linear-gradient(to right, yellow, blue);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .load-more {
   font-size: 25px;
@@ -73,12 +75,14 @@ body {
   margin-right: auto;
   margin-top: 100px;
   display: block;
-  background-color: linear-gradient(to right, blue, yellow);
+  background: linear-gradient(to right, blue, yellow);
   border: none;
   border-radius: 6px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    background-color: linear-gradient(to right, yellow, blue);
+    background: linear-gradient(to right, yellow, blue);
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 2px 2px 5px #33067a;
   }
 
@@ -114,13 +118,15 @@ body {
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
-  background-color: #33067a;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background: #33067a;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .on-top:hover {
-  background-color: #0000ff;
+  background: #0000ff;
   color: #ffff00;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-to-top--visible {
   opacity: 1;
