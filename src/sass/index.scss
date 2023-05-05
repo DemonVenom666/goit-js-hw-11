@@ -55,14 +55,13 @@ body {
   border: none;
   border-radius: 20px;
   font-size: 20px;
-  background: linear-gradient(to right, blue, yellow);
+  background: linear-gradient(to right, yellow, blue);
+  background-size: 150%;
   box-shadow: 2px 1px 2px rgb(3, 46, 201);
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .search-button:hover {
   scale: 1.02;
-  background: linear-gradient(to right, yellow, blue);
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-position: 40%;
 }
 .load-more {
   font-size: 25px;
@@ -75,14 +74,13 @@ body {
   margin-right: auto;
   margin-top: 100px;
   display: block;
-  background: linear-gradient(to right, blue, yellow);
+  background: linear-gradient(to right, yellow, blue);
+  background-size: 150%;
   border: none;
   border-radius: 6px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    background: linear-gradient(to right, yellow, blue);
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-position: 40%;
     box-shadow: 2px 2px 5px #33067a;
   }
 
@@ -106,19 +104,19 @@ body {
   bottom: 3vh;
   right: 2vw;
   z-index: 1;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   border: none;
-  box-shadow: 0 1px 2px 0 rgba(21, 23, 24, 0.3),
+  box-shadow: 0 1px 2px 0 rgba(197, 251, 2, 0.3),
     0 2px 6px 2px rgb(21 23 24 / 15%);
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
-  background: #33067a;
+  background: #000;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
