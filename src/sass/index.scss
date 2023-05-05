@@ -83,7 +83,6 @@ body {
   background: linear-gradient(to right, yellow, blue);
   background-size: 150%;
   border: none;
-  border-radius: 6px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
@@ -109,12 +108,12 @@ body {
 }
 .on-top {
   position: fixed;
-  font-size: 25px;
+  font-size: 10px;
   bottom: 3vh;
   right: 2vw;
   z-index: 1;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,15 +124,13 @@ body {
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
-  background: #000;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.on-top:hover {
   background: #0000ff;
   color: #ffff00;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.on-top:hover {
+  scale: 1.03;
+  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-to-top--visible {
   opacity: 1;
