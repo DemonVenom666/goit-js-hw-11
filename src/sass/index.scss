@@ -78,7 +78,7 @@ body {
   border-radius: 6px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    background-color: #ffff00;
+    background-color: linear-gradient(to right, yellow, blue);
     box-shadow: 2px 2px 5px #33067a;
   }
 
