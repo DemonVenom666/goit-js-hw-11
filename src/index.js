@@ -12,8 +12,6 @@ const gallery = document.querySelector(".gallery");
 const loadButton = document.querySelector(".load-more");
 
 
-// const API_KEY = '30163635-d3ce08ab8a7984e551514dc56';
-
 
 form.addEventListener('submit', onSubmit);
 loadButton.addEventListener('click', onNextPage)
