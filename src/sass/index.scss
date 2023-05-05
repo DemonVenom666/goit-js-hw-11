@@ -55,7 +55,7 @@ body {
   border: none;
   border-radius: 10px;
   font-size: 20px;
-  background-color: white;
+  background-color: linear-gradient(to right, blue, yellow);
   box-shadow: 2px 1px 2px rgb(3, 46, 201);
 }
 .search-button:hover {
@@ -73,7 +73,7 @@ body {
   margin-right: auto;
   margin-top: 100px;
   display: block;
-  background-color: rgb(3, 46, 201);
+  background-color: linear-gradient(to right, blue, yellow);
   border: none;
   border-radius: 6px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
